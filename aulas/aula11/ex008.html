@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentario sincronizado com o tempo</title>
+</head>
+<body>
+    <h1>Agora são</h1>
+    <div id="tem"></div>
+    <div id="res"></div>
+    <script>
+        var tempo = new Date()
+        var h = tempo.getHours()
+        var m = tempo.getMinutes()
+        var s = tempo.getSeconds()
+        var c = document.getElementById('tem')
+        var r = document.getElementById('res')
+        c.innerText=`${h}h:${m}min:${s}s`
+        if (h <12){
+            r.innerText = `Bom dia`
+        }
+         else if (h <18){
+            r.innerText = `Boa tarde`
+        }
+        else{
+            r.innerText = `Boa noite`
+        } 
+    </script>
+</body>
+</html>

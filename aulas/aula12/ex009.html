@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições multiplas</title>
+</head>
+<body>
+    <h1>Progama que vê o dia da semana</h1>
+    <div id="div"></div>
+    <script>
+        var d = new Date()
+        var dia = d.getDay()
+        var tex = document.getElementById('div')
+        switch (dia) {
+            case 0:
+                tex.innerText = 'hoje é domingo'
+                break
+            case 1:
+                tex.innerText = 'hoje é segunda-feira'
+                break
+            case 2:
+                tex.innerText = 'hoje é terça-feira'
+                break
+            case 3:
+                tex.innerText = 'hoje é quarta-feira'
+                break
+            case 4:
+                tex.innerText = 'hoje é quinta-feira'
+                break
+            case 5:
+                tex.innerText = 'hoje é sexta-feira'
+                break
+            case 6:
+                tex.innerText = 'hoje é sábado'
+                break
+        }
+    </script>
+</body>
+</html>

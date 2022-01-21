@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Analisador de Nacionalidade</h1>
+    <p>qual o seu pais de Origem.</p>
+    <input type="text" name="ver" id="ver">
+    <input type="button" value="Analisar" onclick="nac()"
+    >
+    <div id="texto"></div>
+    <script>
+        function nac(){
+            var p = document.getElementById('ver')
+            var t = document.querySelector('div#texto')
+            var ps = String(ver.String)
+            if (ps == 'brasil'){
+                t.innerHTML = `você mora no Brasil então é um brasileiro`
+            }else{
+                t.innerHTML = `você mora fora do Brasil então é um estrangeiro.`
+            }
+        }
+    </script>
+</body>
+</html>
