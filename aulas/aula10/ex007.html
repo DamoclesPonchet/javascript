@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    qual a sua velocidade 
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="resultado" onclick="mostrar()">
+    <div id="resul"></div>
+    <script>
+        function mostrar(){
+        var v = document.getElementById('vel')
+        var c = document.querySelector('div#resul')
+        var vn = Number(vel.value)
+        c.innerHTML = `você estava a <strong>${vn}km/h</strong>`
+        if (vn >60){
+            c.innerHTML += `, <br>você está sendo <strong>multado</strong> por exeso de velocidade.`
+        }
+        }
+    </script>
+</body>
+</html>
