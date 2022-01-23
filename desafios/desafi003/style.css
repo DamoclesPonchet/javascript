@@ -1,0 +1,14 @@
+@charset "UTF-08";
+
+body{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+}
+div{
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    margin: auto;
+}
