@@ -9,20 +9,24 @@
 </head>
 <body>
     <h1>verificador de Idade</h1>
-    <section>
-        <div>
-            <p>
-                ano de nascimento
-                <input type="number" name="ano" id="Idade">
-            </p>
-            <p>
-                sexo:
-                <input type="radio" name="radsex" id="masc">
-                <label for="masc">masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">feminino</label>
-            </p>
-        </div>
-    </section>
+    <main>
+        <p class="esse">
+            ano de nascimento
+            <input type="number" name="ano" id="idade">
+        </p>
+        <p class="esse">
+            sexo:
+            <input type="radio" name="rsex" id="masc">
+            <label for="masc">masculino</label>
+
+            <input type="radio" name="rsex" id="fem">
+            <label for="fem">feminino</label>
+
+        </p>
+
+        <p style="text-align: center;"><input type="button" value="verificar" onclick="analise()"></p>
+        <div id="texto"></div>
+    </main>
+    <script src="sript.js"></script>
 </body>
 </html>
