@@ -1,6 +1,6 @@
 function analise(){
-    var t = new Date()
-    var a = t.getFullYear()
+    var tm = new Date()
+    var a = tm.getFullYear()
 
     var i = document.getElementById('idade')
     var iv = Number(i.value)

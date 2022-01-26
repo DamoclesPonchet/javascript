@@ -4,11 +4,10 @@ function tabuada(){
     var p = 1
     var t = document.getElementById('texto')
     var v = p *nv
+    t.innerHTML = `tabuada forma:<br>`
     for(var p ;p < 11 ; p++ ){
         var v = p *nv
-        var cax = document.createElement('div')
-        cax.innerHTML += `${nv} x ${p} = ${v}<br>`
+        t.innerHTML += `${nv} x ${p} = ${v}<br>`
     }
     cax.innerHTML += `----------------- <br>`
-    body.appendChild(cax)
 }

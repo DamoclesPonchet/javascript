@@ -33,8 +33,4 @@ p{
 div{
     margin: auto;
     text-align: center;
-    border: 1px solid black;
-    width: 100px;
-    border-radius: 10px;
-    display: inline-block;
 }
